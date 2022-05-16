@@ -1,0 +1,29 @@
+@font-face {
+    font-family: Comfortaa;
+    src: url('./fonts/alamain1.ttf');
+}
+
+.orange {
+    color: #FF9900;
+} .orangeBckg {
+    background-color: #FF9900;
+}
+
+#titleApp {
+    font-family: Comfortaa;
+    font-size: 20px;
+}
+
+p {
+    color: #535353
+}
+
+#divListOfLists {
+    border-radius: 0px;
+}
+
+#lowMenu {
+    width: 100%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
