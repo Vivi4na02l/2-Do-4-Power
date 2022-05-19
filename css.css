@@ -3,6 +3,11 @@
     src: url('./fonts/alamain1.ttf');
 }
 
+@font-face {
+    font-family: Baloo;
+    src: url('./fonts/Baloo2-SemiBold.ttf');
+}
+
 .orange {
     color: #FF9900;
 } .orangeBckg {
@@ -15,7 +20,12 @@
 }
 
 p {
-    color: #535353
+    color: #535353;
+    font-family: Baloo;
+}
+
+a {
+    text-decoration: none;
 }
 
 #divListOfLists {
@@ -26,4 +36,10 @@ p {
     width: 100%;
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
+}
+
+#btnAddList {
+    background-color: #F1F1F1;
+    border-width: 0px;
+    font-family: Baloo;
 }
