@@ -30,32 +30,40 @@
         <p class="ml-5 mt-5" style="color: #f1f1f1;">Create a new list</p>
     </div>
 
-    <form>
+    <form id="formAddList">
         <div id="divListOfLists" style="background: #FFFFFF20; width: 100%; border-radius: 5px;
-                                                    display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                                                    display: flex; flex-direction: column; justify-content: left; align-items: center;">
             
             <a style="width: 25%;">
                 <img class="rounded" src="images/banner.png" width="100%">
             </a>
 
-            <input class="mt-2 rounded" type="text" id="txtListName">
+            <input class="mt-2 rounded" type="text" id="txtListName" placeholder="List name" required>
 
             <div style="width: 80%;">
-                <textarea class="rounded mt-5" id="txtDescription" rows="5" style="width: 100%;"></textarea>
+                <textarea class="rounded mt-5" id="txtDescription" rows="5" style="width: 100%;" placeholder="Describe your list!" required></textarea>
                 
                 <div class="d-flex flex-row">
-                    <input class="rounded mt-2" type="date" id="dtLimitDate" style="width: 60%;">
+                    <input class="rounded mt-2" type="date" id="dtLimitDate" style="width: 60%;" required>
                     <select class="rounded mt-2 ml-1" id="sltDificulty" style="width: 40%;">
-                        <option value="difEasy"></option>
-                        <option value="difMedium"></option>
-                        <option value="difHard"></option>
+                        <option class="d-flex flex-row" value="difEasy">
+                            <p>easy</p>
+                        </option>
+                        <option value="difMedium">
+                            <img src="">
+                            <p>medium</p>
+                        </option>
+                        <option value="difHard">
+                            <img src="">
+                            <p>hard</p>
+                        </option>
                     </select>
                 </div>
             </div>
             
         </div>
 
-        <div class="d-flex flex-row justify-content-center">
+        <div class="d-flex flex-row justify-content-center" style="width: 100%;">
             <button class="rounded mt-3 p-2" id="btnAddList" style="width: 80%; background-color: #FF9900; color: #FFFFFF;">
                 Create list
             </button>
@@ -66,7 +74,7 @@
         <p>oi</p>
     </div>
 
-
     <script src="listsJS.js"></script>
+    <script src="addList.js"></script>
 </body>
 </html>
