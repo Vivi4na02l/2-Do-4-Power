@@ -15,7 +15,7 @@ document.querySelector("#formAddList").addEventListener('submit', function(){
     let isDone = false
     let doneDate = ''
 
-    if (!lists.find(pos => pos.name != listName)) {
+    if (!lists.find(pos => pos.name == listName)) {
         let list = {
             name: listName,
             description: description,
